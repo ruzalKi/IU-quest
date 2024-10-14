@@ -117,7 +117,7 @@ async def process_back(call: CallbackQuery):
 
 
 @router.callback_query(F.data == 'close_fill')
-async def process_close_fill(call: CallbackQuery):
+async def process_close_fill(call: CallbackQuery, state: FSMContext):
     await call.message.answer(text='🏠Главное меню: ')
     await state.clear()
 
