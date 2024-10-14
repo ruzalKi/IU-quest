@@ -14,7 +14,6 @@ from handlers import user_handlers, story_handlers, answer_reports, admins_handl
 from handlers import pay
 
 
-# Password MySQL: KsC6(n@:AM$/^0E
 logger = logging.getLogger(__name__)
 
 
