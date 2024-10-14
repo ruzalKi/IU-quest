@@ -119,6 +119,7 @@ async def process_back(call: CallbackQuery):
 @router.callback_query(F.data == 'close_fill')
 async def process_close_fill(call: CallbackQuery):
     await call.message.answer(text='🏠Главное меню: ')
+    await state.clear()
 
 
 # endregion
